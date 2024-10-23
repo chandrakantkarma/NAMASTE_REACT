@@ -47,13 +47,43 @@ A framework is a set of libraries or tools that provide a structure for building
 What is a CDN(Content Delivery Network) used for?
 CDNs help reliably and cost-effectively deliver rich and high-quality media files. Companies streaming video and audio use CDNs to overcome three challenges: reduce bandwidth costs, increase scale, and decrease delivery time. For example, Hulu is an online video streaming platform owned by the Walt Disney Company
 
-what is crossorigin? 
-what is difference between async and differ?
-
 
 what is react and reactDom?
 While React provides the tools and concepts to define component-based user interfaces, ReactDOM handles the task of rendering those interfaces in a web environment.
 
 React: A JavaScript library for building user interfaces using reusable components.
 
-ReactDOM: A tool that renders React components into the actual web page (DOM) -->
+ReactDOM: A tool that renders React components into the actual web page (DOM) 
+
+React is the core library for building UI components.
+ReactDOM is the library that renders those React components into the browser's DOM.
+They work together, but React is about UI logic and component structure, while ReactDOM is about rendering and interacting with the DOM in web applications.
+
+Assignments
+===========
+why react is known as react
+React is called "React" because of the way it handles reactive user interfaces.
+
+ It "reacts" quickly to changes without reloading the whole page. It uses the virtual DOM to efficiently update parts of a webpage. It's built around components that "react" and update.
+
+React is known as "React" because its core functionality revolves around being reactive to data and state changes. 
+
+what is crossorigin
+The purpose of crossorigin attribute is used to share the resources from one domain to another domain.
+
+what is differencE between react.develoopment.js and react.production.js files via CDN?
+
+Development Version (react.development.js): Used for development, includes debugging tools, error messages, and warnings to help developers. It is not optimized for performance and is not minified.
+
+Production Version (react.production.js): Used in production, optimized for speed and size by removing all development-related code. It is minified for faster loading and improved performance.
+
+In short, use the development version (react.development.js) while building and debugging your application, and switch to the production version (react.production.js) when deploying the app to users.
+
+what is difference between async and defer?
+Async
+=====
+Executes as soon as possible, in no particular order, and potentially before the HTML document is fully parsed. Async is a good choice for scripts that don't need to interact with the DOM, like scripts that load images or videos.
+
+Defer
+====
+Executes after the HTML document is fully parsed, but before the DOMContentLoaded event. Defer is a good choice for scripts that need to interact with the DOM, like scripts that initialize widgets or add event listeners-->
